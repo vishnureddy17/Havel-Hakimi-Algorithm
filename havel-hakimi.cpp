@@ -13,7 +13,7 @@ bool havel_hakimi(deque<int> degreeSequence) {
 
     //If there is a element with a value greater than the number of elements, return false.
     //Since the container is sorted, we only need to inspect the first element.
-    if (degreeSequence.front() > degreeSequence.size())
+    if (degreeSequence.front() >= degreeSequence.size())
         return false;
     
     //If there is a negative element, return false.
